@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/info.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet"> 
+        
+        <title>Student Information</title>
+
+    </head>
+    <body>
+        <h1>Student Information </h1><p>
+
+        <form>Search <input type="text" search="search"></form><p>
+
+               
+        <div>
+            {{ % for ps in post_list %}}
+
+        <p>{{ ps }}</p>
+
+        {{ % endfor %}}
+        </div>
+        
+    </body>
+</html>
